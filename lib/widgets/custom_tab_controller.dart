@@ -36,6 +36,7 @@ class _CustomBottomNavigationState extends State<CustomBottomNavigation> {
         tabs: [
           _buildBottomNavItem(index: 0, activeColor: Colors.amber.shade900, icon: Icons.book ),
           _buildBottomNavItem(index: 1, activeColor: Colors.green.shade900, icon: Icons.list),
+          _buildBottomNavItem(index: 2, activeColor: Colors.purple.shade900, icon: Icons.notes),
         ],
       ),
     );

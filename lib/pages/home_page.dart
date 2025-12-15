@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:w_phonics/pages/lessons_page.dart';
 import 'package:w_phonics/pages/profile_page.dart';
+import 'package:w_phonics/pages/pupils_page.dart';
 import 'package:w_phonics/widgets/custom_tab_controller.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,7 +19,7 @@ class _HomePageState extends State<HomePage>
   void initState() {
     super.initState();
 
-    tabController = TabController(length: 2, vsync: this);
+    tabController = TabController(length: 3, vsync: this);
   }
 
   @override
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage>
     return Scaffold(
       body: TabBarView(
         controller: tabController,
-        children: [LessonsPage(), ProfilePage()],
+        children: [LessonsPage(), ProfilePage(), PupilsPage()],
       ),
       bottomNavigationBar: CustomBottomNavigation(tabController: tabController,),
     );
