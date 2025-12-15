@@ -8,12 +8,14 @@ class CustomTextField extends StatelessWidget {
     this.obscureText = false,
     this.textInputType = TextInputType.text,
     this.suffixIcon,
+    required this.textColor,
   });
   final String label;
   final TextEditingController? controller;
   final bool obscureText;
   final TextInputType textInputType;
   final Widget? suffixIcon;
+  final Color textColor;
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +23,7 @@ class CustomTextField extends StatelessWidget {
       controller: controller,
       obscureText: obscureText,
       keyboardType: textInputType,
+      style: TextStyle(color: textColor),
 
       decoration: InputDecoration(
         suffixIcon: suffixIcon,
@@ -39,7 +42,6 @@ class CustomTextField extends StatelessWidget {
         
       ),
       cursorColor: Colors.white,
-      
     );
   }
 }

@@ -16,6 +16,7 @@ class _PassswordTextfieldState extends State<PassswordTextfield> {
     return CustomTextField(
       controller: widget.controller,
       label: "Password",
+      textColor: Colors.white,
       obscureText: _hidePassword,
       suffixIcon: IconButton(
         onPressed: () {

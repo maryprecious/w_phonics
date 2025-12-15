@@ -28,7 +28,11 @@ class SignupSection extends StatelessWidget {
           child: Column(
             spacing: 16,
             children: [
-              CustomTextField(label: "Email", controller: emailController),
+              CustomTextField(label: "Email",
+              textColor: Colors.white,
+              
+               controller: emailController,
+               ),
               PassswordTextfield(controller: passwordController),
             ],
           ),

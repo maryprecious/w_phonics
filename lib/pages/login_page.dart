@@ -40,7 +40,9 @@ class _LoginPageState extends State<LoginPage> {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                CustomTextField(label: "email", controller: emailController),
+                CustomTextField(label: "email",
+                textColor: Colors.white,
+                 controller: emailController),
 
                 PassswordTextfield(controller: passwordController),
                 Row(
